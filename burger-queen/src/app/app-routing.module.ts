@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OrdersComponent } from './views/orders/orders.component';
-import { LoginviewComponent } from './views/loginview/loginview.component';
+import { LoginComponent } from './views/login/login.component';
 
 const routes: Routes = [
 
-  { path: 'login', component: LoginviewComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'orders', component: OrdersComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
   
 ];
 
