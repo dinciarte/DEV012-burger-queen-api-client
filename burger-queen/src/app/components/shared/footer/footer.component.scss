@@ -1,0 +1,29 @@
+@import "../../../../variables.scss";
+
+.footer {
+  height: 5vh;
+  background-color: $color-grey-one;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__parragraph {
+  color: $color-white-one;
+  font-family: $font-one;
+  font-size: 1.5rem;
+}
+.footer__anchor{
+  color: $color-red-one;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-yellow-one;
+  }
+  &:link {
+    color: $color-white-one;
+  }
+  &:active {
+    color: $color-white-one;
+  }
+}
