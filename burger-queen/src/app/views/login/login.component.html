@@ -4,7 +4,7 @@
         <label class="login__text-mail"><img class="login__svg" src="" alt="">Your email</label>
         <input formControlName="email" class="login__input-mail" type="text" id="mail" required>
         <label class="login__text-pass"><img class="login__svg" src="" alt="">Your password</label>
-        <input formControlName="password" class="login__input-pass" type="password" id='password' required>
+        <input formControlName="password" class="login__input-pass" type="password" id='password' minlength="6" required>
         <button type="submit" class="login__button">Login</button>
     </form>
 </main>

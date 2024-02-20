@@ -7,7 +7,8 @@ const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
   { path: 'orders', component: OrdersComponent },
-  { path: '', redirectTo: 'login', pathMatch: 'full' }
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: '**', component: LoginComponent }, //for the 404 thingy
   
 ];
 
