@@ -9,8 +9,9 @@ import { KitchenComponent } from './views/kitchen/kitchen.component';
 import { ReadyComponent } from './views/ready/ready.component';
 import { AdminComponent } from './views/admin/admin.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { InputsComponent } from './components/solo/inputs/inputs.component';
-import { LoginviewComponent } from './views/loginview/loginview.component';
+import { LoginComponent } from './views/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { LoginviewComponent } from './views/loginview/loginview.component';
     ReadyComponent,
     AdminComponent,
     FooterComponent,
-    InputsComponent,
-    LoginviewComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
