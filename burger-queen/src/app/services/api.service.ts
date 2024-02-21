@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LoginI } from '../models/login';
 import { ResponseI } from '../models/response';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,12 +9,12 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient ) { }
 
-  private mockApiUrl = 'https://burger-queen-api-mock-d84tbmzfy-dinciarte.vercel.app';
+  private mockApiUrl = 'http://localhost:8080';
 
   loginForBq(form: LoginI):Observable<ResponseI>{
-    let address = this.mockApiUrl + 'auth';
+    let address = this.mockApiUrl + '/login';
     return this.http.post<ResponseI>(address, form)
   }
 
