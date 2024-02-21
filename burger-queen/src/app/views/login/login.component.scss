@@ -35,7 +35,8 @@
     width: 150%;
     height: 20px;
     padding: 12px 20px;
-    margin: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid $color-grey-zero;
     background-color: $color-grey-two;
     border-radius: 10px;
@@ -53,12 +54,21 @@
 .login__button{
     width: 60%;
     height: 50px;
-    margin: 30px 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     border: none;
     color: $color-white-one;
     background-color: $color-red-one;
     font-family: $font-one;
     font-size: 1.5rem;
     border-radius: 10px;
+}
+
+.login__error-message{
+    color: $color-red-one;
+    font-size: 1rem;
+    font-family: $font-one;
+    margin-top: -13px;
+
 }
     

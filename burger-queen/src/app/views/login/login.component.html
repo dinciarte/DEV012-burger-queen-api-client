@@ -3,8 +3,14 @@
     <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="login__form" action="">
         <label class="login__text-mail"><img class="login__svg" src="" alt="">Your email</label>
         <input formControlName="email" class="login__input-mail" type="text" id="mail" required>
+        <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)" class="login__error-message">
+            Enter a valid email.
+        </div>
         <label class="login__text-pass"><img class="login__svg" src="" alt="">Your password</label>
         <input formControlName="password" class="login__input-pass" type="password" id='password' minlength="6" required>
+        <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="login__error-message">
+            Enter a valid password.
+        </div>
         <button type="submit" class="login__button">Login</button>
     </form>
 </main>

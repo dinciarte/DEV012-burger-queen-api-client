@@ -1,0 +1,23 @@
+@import "../../../../variables.scss";
+
+.header__container{
+    height: 5vh;
+    background-color: $color-red-one;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo{
+    height: 40px;
+
+}
+
+.header__li {
+    color: $color-grey-one;
+    font-family: $font-one;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    text-decoration: none;
+    list-style: none;
+}
