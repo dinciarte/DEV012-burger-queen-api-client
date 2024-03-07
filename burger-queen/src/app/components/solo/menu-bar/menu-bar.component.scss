@@ -1,0 +1,24 @@
+@import '../../../../variables.scss';
+
+.menu__nav{
+    width: 80%;
+    height: 10vh;
+    background-color: $color-grey-three;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+
+}
+
+.menu__li{
+    height: 5vh;
+    width: 100px;
+    background-color: $color-white-one;
+    color: $color-grey-one;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 30px;
+    font-family: $font-one;
+
+}
