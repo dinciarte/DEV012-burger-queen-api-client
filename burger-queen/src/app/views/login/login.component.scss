@@ -62,6 +62,14 @@
     font-family: $font-one;
     font-size: 1.5rem;
     border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: $color-red-two;
+    }
+    &:active{
+        background-color: $color-white-one;
+        color: $color-red-two;
+    }
 }
 
 .login__error-message{

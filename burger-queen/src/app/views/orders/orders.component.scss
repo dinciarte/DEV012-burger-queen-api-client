@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+.orders__container{
+    height: 90hv;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-grey-one;
+    align-items: center;
+    justify-content: center;
+
+}

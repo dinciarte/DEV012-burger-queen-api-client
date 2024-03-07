@@ -13,6 +13,7 @@ import { LoginComponent } from './views/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
 import { ToastrModule } from 'ngx-toastr';
+import { MenuBarComponent } from './components/solo/menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ToastrModule } from 'ngx-toastr';
     ReadyComponent,
     AdminComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule,
